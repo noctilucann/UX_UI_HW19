@@ -1,0 +1,231 @@
+.home {
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 740px;
+    height: calc(100vh - 60px);
+}
+
+h1 {
+    font-family: 'digibopregular';
+    color: #FFF1CE;
+    stroke-width: 16;
+    -webkit-text-stroke-color: #A82162;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 10.24px;
+}
+
+h2 {
+    font-family: 'hannoregular';
+    color: #480123;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h3 {
+    font-family: 'digibopregular';
+    color: #480123;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.12px;
+    margin: 0 auto;
+}
+
+h4 {
+    color: #480123;
+    font-family: Hanno;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.2px;
+}
+
+p {
+    color: #480123;
+    font-family: Hanno;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.92px;
+}
+
+/*Navigation CSS*/
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    color: #480123
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+}
+
+nav {
+    width: 72%;
+    padding: 1%;
+}
+
+nav ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+li {
+    font-family: 'hannoregular';
+    font-size: 24px;
+}
+
+.logo {
+    text-align: center;
+}
+
+/*Hero section CSS*/
+.heroImg {
+    padding: 25px;
+}
+
+.container {
+    position: relative;
+    height: 424px;
+    width: 1088px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.star {
+    position: relative;
+    border: 2px solid black;
+    width: 910px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star img {
+    height: 476px;
+}
+
+.welcome {
+    display: flex;
+    margin-left: -237px;
+}
+
+.tagline {
+    width: 515px;
+    margin-top: -112px;
+}
+
+button {
+    background-color: none;
+    border: none;
+    color: #480123;
+}
+
+/*My Skills CSS*/
+.sectionHead {
+    display: flex;
+    padding: 0px 32px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 32px;
+    border: 8px solid #A82162;
+    background: #FFF1CE;
+    margin-top: 32px;
+}
+
+.sectionHead img {
+    height: 64px;
+}
+
+#mySkills-Grid {
+    display: grid;
+    grid-template-rows: max-content 154px 154px 154px;
+    gap: 16px;
+    min-height: 800px;
+    height: 100vh;
+    justify-content: center;
+}
+
+.skill-card {
+    display: grid;
+    grid-template-columns: max-content max-content 1fr;
+    padding: 0px 32px;
+    gap: 64px;
+}
+
+.skill-card img {
+    align-self: center;
+}
+
+.skill-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+}
+
+/*.sideAccent {
+    background-image: url(../images/diamondLine.png);
+    background-repeat: no-repeat;
+}
+
+/*My Work CSS*/
+#myWork {
+    background: #E1EAFF;
+}
+
+#myWork img {
+    height: 64px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1106px;
+    margin: 0 auto;
+    gap: 73px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.imageContainer {
+    background: #FFF1CE;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+#myWork button {
+    align-self: auto;
+}
+
+/*Footer CSS*/
+footer {
+    background-color: #373738;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+}

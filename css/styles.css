@@ -1,4 +1,4 @@
-.home {
+#home {
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,14 +9,32 @@
 h1 {
     font-family: 'digibopregular';
     color: #FFF1CE;
-    stroke-width: 16;
-    -webkit-text-stroke-color: #A82162;
     font-size: 128px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 10.24px;
+    paint-order: stroke fill;
+
 }
+
+/*outside stroke from peter carrero*/
+/* prepare the selectors to add a stroke to */
+.stroke-single {
+    position: relative;
+    background: transparent;
+    z-index: 0;
+}
+
+/* add a single stroke */
+.stroke-single:before {
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 32px #A82162;
+    left: 0;
+    z-index: -1;
+}
+
 
 h2 {
     font-family: 'hannoregular';
@@ -79,15 +97,34 @@ nav {
 nav ul {
     width: 50%;
     margin-left: auto;
+    display: flex;
+    padding: 0px 24px;
+    align-items: flex-start;
+    gap: 24px;
 }
 
-li {
+a:link,
+a:visited {
     font-family: 'hannoregular';
     font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: none;
+    text-decoration: none;
 }
 
 .logo {
     text-align: center;
+}
+
+a:hover,
+a:active {
+    border-radius: 20px;
+    background-color: #FFF1CE;
 }
 
 /*Hero section CSS*/
@@ -103,7 +140,7 @@ li {
     display: flex;
 }
 
-.leftSide{
+.leftSide {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -117,6 +154,7 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+
 .star img {
     height: 476px;
 }

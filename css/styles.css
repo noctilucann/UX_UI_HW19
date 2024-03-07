@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     height: 740px;
     height: calc(100vh - 60px);
+    position: relative;
 }
 
 h1 {
@@ -81,7 +82,7 @@ p {
 .inline-block {
     display: inline-block;
     vertical-align: top;
-    color: #480123
+    color: #480123;
 }
 
 .logo {
@@ -130,6 +131,12 @@ a:active {
 /*Hero section CSS*/
 .heroImg {
     padding: 25px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;   
 }
 
 .container {
@@ -148,19 +155,17 @@ a:active {
 
 .star {
     position: relative;
-    border: 2px solid black;
     width: 910px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .star img {
-    height: 476px;
+    height: 348px;
 }
 
 .welcome {
-    display: flex;
     margin-left: -237px;
 }
 
@@ -169,10 +174,26 @@ a:active {
     margin-top: -112px;
 }
 
-button {
-    background-color: none;
+.container button {
+    background-color: transparent;
     border: none;
     color: #480123;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #480123;
+    text-align: center;
+    font-family: Hanno;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.container button img {
+    height: 128px;
 }
 
 /*My Skills CSS*/
@@ -260,7 +281,8 @@ button {
 
 /*Footer CSS*/
 footer {
-    background-color: #373738;
+    background: var(--Window-Content-Base-Grey-3, #B8C0C1);
+    box-shadow: 2px 2px 0px 0px #FFF inset, -2px -2px 0px 0px #808080 inset, 1px 1px 0px 0px #DFDFDF inset, -1px -1px 0px 0px #0A0A0A inset;
 }
 
 footer ul {
